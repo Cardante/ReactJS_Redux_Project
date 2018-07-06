@@ -1,10 +1,9 @@
 import React from "react";
 import {connect} from "react-redux";
 
-import { Login } from './Login'
+import Login from './Login'
 
 import { setName } from '../actions/userActions';
-
 
 class App extends React.Component {
     render() {
@@ -24,8 +23,7 @@ class App extends React.Component {
 //Which properties of my global application state that i want to use, which reducers are to be used in
 const mapStateToProps = (state) => {
     return {
-        user: state.userReducer,
-        math: state.mathReducer,
+        user: state.userReducer
     };
 };
 
