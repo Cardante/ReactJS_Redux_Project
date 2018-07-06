@@ -1,0 +1,20 @@
+#main_container {
+    background-color: #d8dbdc;
+}
+
+#login_panel {
+    background-color:#F7F7F7;
+    width: 40%;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: block;
+}
+
+.form-control{
+    margin-bottom:25px;
+}
+
+#signin {
+    width:100%;
+}

@@ -1,24 +1,24 @@
 import React from "react";
 import {connect} from "react-redux";
-import { User } from '../components/User';
-import { Main } from '../components/Main';
+
+import { Login } from './Login'
 
 import { setName } from '../actions/userActions';
 
 
 class App extends React.Component {
-    
     render() {
         return (
-            <div className="container">
-                <Main changeUsername={() => this.props.setName("Anna")}/>
-                {/*Passes the user from mapToStateProps*/}
-                <User username={this.props.user.name}/>
+            <div id="main_container" className="container-fluid">
+                <Login />
             </div>
         );
     }
-    
 }
+
+// <Main changeUsername={() => this.props.setName("Anna")}/>
+// {/*Passes the user from mapToStateProps*/}
+// <User username={this.props.user.name}/>
 
 //INDEX.JS -> GLOBAL STATE
 //Which properties of my global application state that i want to use, which reducers are to be used in
